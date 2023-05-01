@@ -82,7 +82,7 @@ const ProductCard = ({title, image}:productPropsType) => {
         >
             <div className="relative h-full w-full flex justify-center items-center cursor-pointer ">
                 {/* card bg */}
-                <div className="absolute top-0 left-0 w-full h-full  rounded-sm backdrop-blur-md p-0 m-0 ring-1 ring-white bg-white/70 shadow-md hover:shadow-2xl shadow-white/30 hover:shadow-white/40 transform-gpu transition-all duration-200  ease-out "></div>
+                <div className="absolute top-0 left-0 w-full h-full  rounded-sm backdrop-blur-md p-0 m-0 ring-1 ring-white bg-white/70 shadow-sm hover:shadow-xl shadow-black/30 hover:shadow-black/40 transform-gpu transition-all duration-200  ease-out "></div>
                 <div className="relative flex flex-col justify-start items-center p-4">
                     <div className="h-24 w-24 overflow-hidden bg-white/40">
                         <img className="w-full h-full object-contain object-center" src={image} alt=""/>

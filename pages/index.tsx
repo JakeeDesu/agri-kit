@@ -44,7 +44,7 @@ const AgriEdge = () => {
   const context = useContext(G_Context)
 
   return (
-    <>
+    <div className='w-full h-full'>
     <AnimatePresence>
     {context.onDisplay == 0 && <motion.div
           key="form"
@@ -91,8 +91,12 @@ const AgriEdge = () => {
 
       </AnimatePresence>
         {context.onDisplay == 2 && 
-          <PDFReader/>}
-    </>
+          <div className='h-full w-full bg-black'>
+            <PDFReader/>
+
+          </div>
+          }
+    </div>
   )
 }
 

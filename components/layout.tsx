@@ -15,7 +15,7 @@ export const Layout = ({ children }: LyoutPropsType) => {
                 <img className=" w-full h-full  object-cover object-center" src="/form/images/agriEdge_shape.jpg" alt=""/>
             </div>
             {/* card bg */}
-            <div className="absolute top-0 left-0 w-screen h-screen bg-gradient-to-br opacity0  from-black/70 via-black/70 to-green-800/70 backdrop-blur-sm "></div>
+            <div className="absolute top-0 left-0 bottom-0 right-0 w-screen h-screen bg-gradient-to-br opacity0  bg-white/20 backdrop-blur-sm "></div>
         {children}
         </main>
     )
