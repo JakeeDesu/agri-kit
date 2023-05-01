@@ -15,7 +15,7 @@ const products: ProductType[] = [
     },
     {
         title : "aquaEdge",
-        image : "/products/images/aqua.png",
+        image : "/products/images/Aqua.png",
         pdf : ""
     },
     {
