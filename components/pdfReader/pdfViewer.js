@@ -30,7 +30,7 @@ const PdfViewer = ({ file }) => {
   }
 
   return (
-    <div ref={containerRef}>
+    <div  ref={containerRef}>
       <Document
         file={file}
         onLoadSuccess={onDocumentLoadSuccess}

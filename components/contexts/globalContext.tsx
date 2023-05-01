@@ -27,7 +27,7 @@ type G_Context_Type = {
 
 // default values
 const default_G_Context = {
-    onDisplay : 0,
+    onDisplay : 2,
     changeDisplay : (x:any) => x,
     formData: {
         firstName : "",
