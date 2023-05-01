@@ -11,11 +11,18 @@ export const Layout = ({ children }: LyoutPropsType) => {
         `}
       >
             {/* texture image */}
-            <div className="absolute h-screen w-screen top-0 left-0  backdrop-blur-lg overflow-hidden opacity-30">
-                <img className=" w-full h-full  object-cover object-center" src="/form/images/agriEdge_shape.jpg" alt=""/>
+            <div className="absolute h-screen w-screen top-0 left-0  backdrop-blur- overflow-hidden">
+                <img className=" w-full h-full  object-cover object-center" src="/shapes.jpg" alt=""/>
             </div>
             {/* card bg */}
-            <div className="absolute top-0 left-0 bottom-0 right-0 w-screen h-screen bg-gradient-to-br opacity0  bg-white/20 backdrop-blur-sm "></div>
+            <div className="absolute top-0 left-0 bottom-0 right-0 w-screen h-screen bg-gradient-to-br opacity0  bg-whie/20 backdrop-blur-sm "></div>
+            {/* agriEdge Logo */}
+            <div className="absolute h-screen w-screen flex justify-center items-center top-0 left-0  backdrop-blur- ">
+                <div className="w-96 h-96 overflow-hidden">
+                    <img className=" w-full h-full  object-contain object-center backdrop-blur-sm" src="/agriEdge-logo.webp" alt=""/>
+
+                </div>
+            </div>
         {children}
         </main>
     )

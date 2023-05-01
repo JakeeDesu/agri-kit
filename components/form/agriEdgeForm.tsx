@@ -44,7 +44,7 @@ export const AgriEdgeForm = () => {
     }
 
     return (
-        <div className={`relative w-72 min-w-max max-w-4xl md:w-80 h-fit p-0 m-2 ring-1 ring-white rounded-sm overflow-hidden bg-white/40  hover:scale-105 shadow-lg hover:shadow-xl transition  duration-700 ease-in-out `}>
+        <div className={`relative w-80 min-w-max max-w-4xl md:w-96 h-fit p-0 m-2 ring-1  ring-white rounded-sm overflow-hidden bg-white/80 backdrop-blur-2xl  hover:scale-105 shadow-xl hover:shadow-2xl transition  duration-700 ease-in-out `}>
             {/* texture image */}
             {/* <div className="absolute top-0 left-0 w-full h-full  backdrop-blur-lg overflow-hidden p-1 opacity-30">
                 <img className="h-full w-full object-cover object-center" src="/form/images/agriEdge_shape.jpg" alt=""/>
@@ -58,9 +58,9 @@ export const AgriEdgeForm = () => {
                 </div>
                 <form id="form" method='POST' className='w-full h-fit overscroll-none'>
                     <div className="w-full mb-6">
-                        <label className="block text-gray-700/90 text-sm font-bold mb-1">Non</label>
+                        <label className="block text-gray-900/90 text-sm font-bold mb-1">Non</label>
                         <input
-                            className=' appearance-none border rounded w-full  py-2 px-3 focus:px-4 text-gray-700/70 leading-tight outline-none focus:outline-none focus:shadow-none  transform transition-all duration-200 '
+                            className=' appearance-none border rounded w-full  py-2 px-3 focus:px-4 text-gray-800/70 leading-tight outline-none focus:outline-none focus:shadow-none  transform transition-all duration-200 '
                             type="text"
                             name="lastName"
                             placeholder='Nom'
@@ -71,9 +71,9 @@ export const AgriEdgeForm = () => {
                         {/* {firstName_error && <label className=' absolute top-full left-1 mx-1 text-orange-500/90 font-medium tracking-wider font-Poppins text-xs' htmlFor="">Exemple@gmail.com</label>} */}
                     </div>
                     <div className="w-full mb-6" >
-                        <label className="block text-gray-700/90 text-sm font-bold mb-1 " >Prénom</label>
+                        <label className="block text-gray-900/90 text-sm font-bold mb-1 " >Prénom</label>
                         <input
-                            className=' appearance-none border rounded w-full  py-2 px-3 focus:px-4 text-gray-700/70 leading-tight outline-none focus:outline-none focus:shadow-outline transform transition-all duration-200'
+                            className=' appearance-none border border-gray-300/50 rounded w-full  py-2 px-3 focus:px-4 bg-white text-gray-800/70 leading-tight outline-none focus:outline-none focus:shadow-outline transform transition-all duration-200'
                             type="text"
                             name="firstName"
                             placeholder='Prénom'
@@ -101,7 +101,7 @@ export const AgriEdgeForm = () => {
                     {/* submit button */}
                     <div className={`w-full h-fit flex flex-row justify-center items-start ${readyToSubmit ? "opacity-100 " : "opacity-0 pointer-events-none"} transition-opacity duration-150 ease-in-out`}>
                         <button
-                            className="h-fit w-32 rounded-full hover:bg-green-900/10 hover:shadow-2xl hover:shadow-lime-400/40  hover:ring-1 hover:ring-lime-800/20 text-lime-800/50 hover:text-lime-800/60 text-base  font-black py-2 px-3 tracking-wider capitalize transition-all duration-400 ease-in"
+                            className="h-fit w-32 rounded-full hover:inner-shadow   bg-gradient-to-b from-lime-700/0 via-lime-700/5 to-lime-700/5 hover:from-lime-700/0 hover:via-lime-700/10 hover:to-lime-700/20    hover:ring-lime-800/5 text-lime-800/50 hover:text-lime-800/60 text-base  font-black py-2 px-3 tracking-wider capitalize transition-all duration-400 ease-in"
                             onClick={onSubmit}
                         >submit</button>
                     </div>
