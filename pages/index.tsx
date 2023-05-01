@@ -88,28 +88,10 @@ const AgriEdge = () => {
           <AgriEdgeProducts/>
         </motion.div>}
 
-        {context.onDisplay == 2 && <motion.div
-          className='w-full h-full flex justify-center items-center p-0 m-0 bg-black'
-          key="product"
-          variants={frameVariants}
-          initial="show"
-          animate="display"
-          transition={{
-            ease : 'easeInOut',
-            duration : 1,
-            delay : 1
-          }}
-          exit={{
-            opacity : 0,
-            transition : {
-              duration : 1
-            }
-          }}
-        >
-          <PDFReader/>
-        </motion.div>}
 
       </AnimatePresence>
+        {context.onDisplay == 2 && 
+          <PDFReader/>}
     </>
   )
 }
