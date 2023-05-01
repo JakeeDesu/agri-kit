@@ -12,7 +12,7 @@ export const Layout = ({ children }: LyoutPropsType) => {
       >
             {/* texture image */}
             <div className="absolute h-screen w-screen top-0 left-0  backdrop-blur- overflow-hidden">
-                <img className=" w-full h-full  object-cover object-center" src="/shapes.jpg" alt=""/>
+                <img className=" w-full h-full  object-cover object-center" src="/shapes.webp" alt=""/>
             </div>
             {/* card bg */}
             <div className="absolute top-0 left-0 bottom-0 right-0 w-screen h-screen bg-gradient-to-br opacity0  bg-whie/20 backdrop-blur-sm "></div>
