@@ -52,10 +52,13 @@ export const AgriEdgeProducts = () => {
     const isVisible = context.onDisplay == 1
 
     return (
-        <div className={`relative grid grid-cols-1 md:grid-cols-2 gap-10 w-full h-full px-4 py-8 max-w-4xl transition-all duration-1000 ease-in-out overflow-y-scroll`}>
-            {products.map((product, index) => (
-                <ProductCard key={index} title={product.title} image={product.image}/>
-            ))}
+        <div className="w-screen h-screen flex justify-center items-start overflow-y-scroll p-4 py-2 ">
+            <div className={`relative grid grid-cols-1 md:grid-cols-2 gap-8 py-8 w-full max-w-4xl h-full rounded-sm ring-1 md:ring-0 ring-white bg-black/5 md:bg-black/0 backdrop-blur-lg md:backdrop-blur-none   transition-all duration-1000 ease-in-out overflow-y-scroll `}>
+                {products.map((product, index) => (
+                    <ProductCard key={index} title={product.title} image={product.image}/>
+                ))}
+            </div>
+
         </div>
     )
 }
@@ -81,13 +84,10 @@ const ProductCard = ({title, image}:productPropsType) => {
             onClick={clickHandler}
         >
             <div className="relative h-full w-full flex justify-center items-center cursor-pointer ">
-                {/* card bg */}
-                <div className="absolute top-0 left-0 w-full h-full  rounded-sm backdrop-blur-md p-0 m-0 ring-1 ring-white bg-white/70 shadow-sm hover:shadow-xl shadow-black/30 hover:shadow-black/40 transform-gpu transition-all duration-200  ease-out "></div>
-                <div className="relative flex flex-col justify-start items-center p-4">
-                    <div className="h-24 w-24 overflow-hidden bg-white/40">
+                <div className="relative h-48 w-48  flex flex-col justify-start items-center p-4 m-10 bg-white  rounded-full shadow-sm ">
+                    <div className="h-full w-full p-4 overflow-hidden ">
                         <img className="w-full h-full object-contain object-center" src={image} alt=""/>
                     </div>
-                    <p>{title}</p>
                 </div>
             </div>
         </div>
